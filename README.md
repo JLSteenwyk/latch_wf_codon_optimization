@@ -5,7 +5,7 @@
     <a href="https://latch.bio/">
         <img src="images/latch_logo.png" width=50%>
     </a>
-    <a href="https://console.latch.bio/explore/59878/info">
+    <a href="https://console.latch.bio/explore/60054/info">
     <br/>
     <span style="font-size:larger;">Click here to see the workflow!</span></br>
     </a>
