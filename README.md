@@ -1,6 +1,6 @@
 <p align="center">
     <a href="https://latch.bio/">
-        <img src="images/clipkit_logo.jpg" width=37.5%>
+        <img src="images/biokit_logo.jpg" width=37.5%>
     </a>
     <a href="https://latch.bio/">
         <img src="images/latch_logo.png" width=50%>
@@ -21,35 +21,29 @@
 
 </br>
 
-# ClipKIT, the multiple sequence alignment trimming toolkit
+# Codon optimization with BioKIT
 ## About
-ClipKIT is a fast and flexible alignment trimming
-tool that keeps phylogenetically informative sites
-and removes those that display characteristics poor
-phylogenetic signal.
+Estimates of codon optimization can be used to identify
+genes that are expressed at high levels and are important
+for organismal ecology. Here, we will use the metric
+gRSCU (gene-wise relative synonymous codon usage), which
+is a function in the bioinformatic toolkit
+[BioKIT](https://jlsteenwyk.com/BioKIT),
+to estimate codon optimization.
 
-<br />
+<br/>
 
-If you found clipkit useful, please cite *ClipKIT:
-a multiple sequence alignment trimming software for
-accurate phylogenomic inference*. Steenwyk et al. 2020,
-PLoS Biology. doi:
-[10.1371/journal.pbio.3001007](https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.3001007).
+## gRSCU
+gRSCU is calculated by determining the mean or median
+relative synonymous codon usage value for all codons in each
+gene based on their genome-wide values.
 
-<br />
+<br/>
 
-## Modes
-Herein, we describe the various trimming modes implemented in ClipKIT. If you are unsure which is appropriate for you, we recommend using the default smart-gap trimming mode.
+## Citation
+If you found [BioKIT](https://jlsteenwyk.com/BioKIT) useful,
+please cite *BioKIT: a versatile toolkit for processing and
+analyzing diverse types of sequence data*. Steenwyk et al.
+2022, GENETICS. doi:
+[10.1093/genetics/iyac079](https://academic.oup.com/genetics/advance-article-abstract/doi/10.1093/genetics/iyac079/6583183).
 
-<br />
-
-ClipKIT can be run with eight different modes, which are specified with the -m/–mode argument. Default: ‘smart-gap’
-<br />
-- smart-gap: dynamic determination of gaps threshold
-- gappy: trim all sites that are above a threshold of gappyness (default: 0.9)
-- kpic: keep only parismony informative and constant sites
-- kpic-smart-gap: a combination of kpic- and smart-gap-based trimming
-- kpic-gappy: a combination of kpic- and gappy-based trimming
-- kpi: keep only parsimony informative sites
-- kpi-smart-gap: a combination of kpi- and smart-gap-based trimming
-- kpi-gappy: a combination of kpi- and gappy-based trimming
